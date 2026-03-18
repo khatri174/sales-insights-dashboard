@@ -1,0 +1,58 @@
+-- CREATE DATABASE sales_db;
+-- USE sales_db;
+
+-- CREATE TABLE orders (
+--     Row_ID INT,
+--     Order_ID VARCHAR(20),
+--     Order_Date DATE,
+--     Ship_Date DATE,
+--     Ship_Mode VARCHAR(50),
+--     Customer_ID VARCHAR(20),
+--     Customer_Name VARCHAR(100),
+--     Segment VARCHAR(50),
+--     Country VARCHAR(50),
+--     City VARCHAR(50),
+--     State VARCHAR(50),
+--     Postal_Code VARCHAR(20),
+--     Region VARCHAR(50),
+--     Product_ID VARCHAR(50),
+--     Category VARCHAR(50),
+--     Sub_Category VARCHAR(50),
+--     Product_Name VARCHAR(255),
+--     Sales DECIMAL(10,2)
+-- );
+-- SELECT * from orders
+-- LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/proj_data.csv'
+-- INTO TABLE orders
+-- FIELDS TERMINATED BY ','
+-- ENCLOSED BY '"'
+-- LINES TERMINATED BY '\n'
+-- IGNORE 1 ROWS
+-- (@Row_ID, @Order_ID, @Order_Date, @Ship_Date, @Ship_Mode,
+--  @Customer_ID, @Customer_Name, @Segment, @Country, @City,
+--  @State, @Postal_Code, @Region, @Product_ID,
+--  @Category, @Sub_Category, @Product_Name, @Sales)
+-- SET
+-- Order_Date = STR_TO_DATE(@Order_Date, '%d-%m-%Y'),
+-- Ship_Date = STR_TO_DATE(@Ship_Date, '%d-%m-%Y'),
+-- Row_ID = @Row_ID,
+-- Order_ID = @Order_ID,
+-- Ship_Mode = @Ship_Mode,
+-- Customer_ID = @Customer_ID,
+-- Customer_Name = @Customer_Name,
+-- Segment = @Segment,
+-- Country = @Country,
+-- City = @City,
+-- State = @State,
+-- Postal_Code = @Postal_Code,
+-- Region = @Region,
+-- Product_ID = @Product_ID,
+-- Category = @Category,
+-- Sub_Category = @Sub_Category,
+-- Product_Name = @Product_Name,
+-- Sales = @Sales;
+
+
+-- SELECT * from orders
+
+
